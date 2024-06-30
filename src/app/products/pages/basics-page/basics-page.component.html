@@ -1,0 +1,57 @@
+<p-panel header="Pipes Basicos" class="p-1 ">
+  <p>Pipes de ANGULAR | generalmente en el Common Module</p>
+</p-panel>
+
+<div class ="grid ">
+  <div class="col-12 md:col-4">
+    <p-card header="UPPERCASE">{{nameLower}} -> {{nameUpper | uppercase}}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">{{nameUpper}} -> {{nameLower | lowercase}}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="titleCase">{{fullname}} -> {{fullname | titlecase}}</p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Fechas y Horas">
+      <ol>
+        <li>Fecha</li>
+        <li>Fecha | Date</li>
+        <li>Fecha | short</li>
+        <li>Fecha | long</li>
+        <li>Fecha | MMMM</li>
+        <li>Fecha | MMMM, dd, yyyy</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>Fecha | date:'long':'GMT-6'</li>
+        <li>Fecha | date:'long':'GMT-4'</li>
+        <li>Fecha | date:'long':'':'es-AR'</li>
+        <li>Fecha | date:'long':'':'fr-CA'</li>
+        <li>Fecha | date:'long':'':'en-US'</li>
+      </ol>
+      </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Fechas y Horas">
+      <ol>
+        <li>{{customDate}}</li>
+        <li>{{customDate | date}}</li>
+        <li>{{customDate | date: 'short'}}</li>
+        <li>{{customDate | date: 'long'}}</li>
+        <li>{{customDate | date: 'MMMM'}}</li>
+        <li>{{customDate | date: 'MMMM/dd/yyyy'}}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{customDate | date:'long':'GMT-6'}}</li>
+        <li>{{customDate | date:'long':'GMT-4'}}</li>
+        <li>{{customDate | date:'long':'':'es-AR'}}</li>
+        <li>{{customDate | date:'long':'':'fr-CA'}}</li>
+        <li>{{customDate | date:'long':'':'en-US'}}</li>
+
+
+      </ol>
+    </p-card>
+  </div>
+</div>
